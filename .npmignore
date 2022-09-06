@@ -1,6 +1,19 @@
+# logs
+logs
+*.log
+npm-debug.log*
+
+# ts source files
 *.ts
+
+# keep typings
 !*.d.ts
 
-# CDK asset staging directory
+# cdk asset staging directory
 .cdk.staging
 cdk.out
+
+# dotenv files
+.env
+.env.*
+!.env.example

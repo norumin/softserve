@@ -1,8 +1,23 @@
-*.js
-!jest.config.js
-*.d.ts
+# logs
+logs
+*.log
+npm-debug.log*
+
+# dependencies
 node_modules
 
-# CDK asset staging directory
+# ts build files
+*.js
+*.d.ts
+
+# configs
+!jest.config.js
+
+# cdk asset staging directory
 .cdk.staging
 cdk.out
+
+# dotenv files
+.env
+.env.*
+!.env.example
