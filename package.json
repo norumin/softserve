@@ -1,6 +1,35 @@
 {
   "name": "softserve",
   "version": "0.1.0",
+  "private": false,
+  "description": "Git server based on Soft Serve",
+  "keywords": [
+    "aws",
+    "cdk",
+    "typescript",
+    "javascript",
+    "git",
+    "self-hosted",
+    "soft-serve"
+  ],
+  "author": {
+    "name": "cednore",
+    "email": "cednore@norumin.com"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:norumin/softserve.git"
+  },
+  "homepage": "https://github.com/norumin/softserve",
+  "bugs": {
+    "url": "https://github.com/norumin/softserve/issues"
+  },
+  "engines": {
+    "node": ">= 16.0.0",
+    "npm": ">= 8.0.0"
+  },
   "bin": {
     "softserve": "bin/softserve.js"
   },
@@ -9,6 +38,11 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.40.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.21"
   },
   "devDependencies": {
     "@types/jest": "^27.5.2",
@@ -19,10 +53,5 @@
     "aws-cdk": "2.40.0",
     "ts-node": "^10.9.1",
     "typescript": "~3.9.7"
-  },
-  "dependencies": {
-    "aws-cdk-lib": "2.40.0",
-    "constructs": "^10.0.0",
-    "source-map-support": "^0.5.21"
   }
 }
